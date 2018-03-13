@@ -1,5 +1,5 @@
-Eve Based Mongo Restful Service Template
-=========================================
+Eve-Based Restful Service Template
+===================================
 
 Hi!
 
