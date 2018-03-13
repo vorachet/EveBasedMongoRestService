@@ -1,3 +1,12 @@
+import sys
+import imp
+
+try:
+    imp.find_module('dbconf')
+except ImportError:
+    print("dbconf.py does not exist.  See README on https://github.com/vorachet/EveBasedMongoRestService")
+    sys.exit()
+
 import dbconf
 
 MONGO_HOST = dbconf.CONFIG['MONGO_HOST']
