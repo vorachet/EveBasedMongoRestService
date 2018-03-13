@@ -1,4 +1,5 @@
-from eve import Eve
+import eve
+from eve_elastic import Elastic
 
-app = Eve()
+app = eve.Eve(data=Elastic)
 app.run()

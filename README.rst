@@ -1,5 +1,5 @@
-Eve-Based Restful Service Template
-===================================
+Eve-Based Restful Service Template (Elastic)
+============================================
 
 Hi!
 
@@ -10,8 +10,19 @@ Eve (http://python-eve.org/) is an open source Python REST API framework designe
 
 Get the tempalte
 .. code::
-  git clone https://github.com/vorachet/EveBasedMongoRestService.git
+  git clone -b elastic https://github.com/vorachet/EveBasedMongoRestService.git
   cd EveBasedMongoRestService
+
+Download and run Elasticsearch
+.. code::
+  wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.2.tar.gz
+  tar xzvf elasticsearch-6.2.2.tar.gz
+  cd elasticsearch-6.2.2
+  ./bin/elasticsearch
+
+Test Elasticsearch
+.. code::
+  curl http://localhost:9200/
 
 Create dbconf.py
 .. code::
@@ -26,6 +37,7 @@ Create dbconf.py
 Run server
 .. code::
   pip install eve
+  pip install Eve-Elastic
   python run.py
 
 Create new data

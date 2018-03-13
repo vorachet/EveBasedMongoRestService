@@ -4,7 +4,8 @@ __pycache__/
 *$py.class
 
 dbconf.py
-
+elasticsearch-6.2.2.tar.gz
+elasticsearch-6.2.2
 # C extensions
 *.so
 
